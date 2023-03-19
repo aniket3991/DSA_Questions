@@ -1,4 +1,4 @@
-package GFG;
+package GFG_POD;
 
 public class SubArraysOfZeros {
     long noOfSubarrays(int N, int [] arr) {
