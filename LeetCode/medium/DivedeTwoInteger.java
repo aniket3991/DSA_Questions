@@ -2,7 +2,7 @@ package medium;
 
 public class DivedeTwoInteger {
     public int divide(int dividend, int divisor) {
-        int quetoient = 0;
+        /*int quetoient = 0;
         Boolean flag = false;
         Boolean flag2 = true;
         if(dividend == Integer.MIN_VALUE) {
@@ -25,7 +25,10 @@ public class DivedeTwoInteger {
             }
         }
 
-        return flag && flag2 ? quetoient * -1 : quetoient;
+        return flag && flag2 ? quetoient * -1 : quetoient;*/
+
+        // Working on this code
+        return 0;
     }
 
     public static void main(String[] args) {
