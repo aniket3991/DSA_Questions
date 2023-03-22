@@ -2,7 +2,7 @@ package easy;
 
 public class AddBinary {
     public String addBinary(String a, String b) {
-        String sum = "";
+        /*String sum = "";
         String min = a.length() <= b.length() ? a : b;
         String max = b.length() >= a.length() ? b : a;
 
@@ -48,7 +48,24 @@ public class AddBinary {
         StringBuilder s = new StringBuilder(sum);
         sum = String.valueOf(s.reverse());
 
-        return sum;
+        return sum;*/
+
+        StringBuilder sum = new StringBuilder();
+        int i = a.length() - 1;
+        int j = b.length() - 1;
+
+        int carry = 0;
+
+        for(; i >= 0 || j >= 0 || carry == 1; i--,j--){
+            if(i >= 0)
+                carry += a.charAt(i) - '0';
+            if(j >= 0)
+                carry += b.charAt(j) - '0';
+            sum.append(carry % 2);
+            carry /= 2;
+        }
+
+        return sum.reverse().toString();
     }
 
     public static void main(String[] args) {
