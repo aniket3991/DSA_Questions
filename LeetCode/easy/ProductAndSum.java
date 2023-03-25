@@ -1,7 +1,5 @@
 package easy;
 
-import medium.Permutations;
-
 public class ProductAndSum {
     public int subtractProductAndSum(int n) {
         int sum = 0;
