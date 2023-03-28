@@ -1,2 +1,2 @@
 # DSA_Questions
-Leetcode Solutions
+Leetcode Solutions Solving on daily basis.
