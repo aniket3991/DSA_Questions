@@ -1,9 +1,11 @@
 package easy;
 
+import java.util.Arrays;
+
 public class LongestCommonPrefix {
     
     public String longestCommonPrefix(String[] strs) {
-        String prefix = "";
+    /*    String prefix = "";
         int min = strs[0].length();
         for(int i = 1; i < strs.length; i++) {
             if(min > strs[i].length())
@@ -28,7 +30,26 @@ public class LongestCommonPrefix {
             }
             idx++;
         }
-        return prefix;
+        return prefix;*/
+        /*String result = "";
+        Arrays.sort(strs);
+        
+        int min = Math.min(strs[0].length(), strs[strs.length -1].length());
+        for(int i = 0; i < min; i++) {
+            if(strs[0].charAt(i) == strs[strs.length - 1].charAt(i))
+                result += strs[0].charAt(i);
+            else
+                break;
+        }
+        return result;*/
+        String result = strs[0];
+        
+        for (String str : strs) {
+            while (str.indexOf(result) != 0) {
+                result = result.substring(0, result.length() - 1);
+            }
+        }
+        return result;
     }
     
     public static void main(String[] args) {
